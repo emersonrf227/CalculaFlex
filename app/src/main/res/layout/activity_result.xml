@@ -1,5 +1,14 @@
-
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormActivity">
+
+
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,7 +23,7 @@
     <TextView
         style="@style/header_title"
         android:drawableStart="@drawable/analysis_icon"
-        android:text="Sugestão de Abastecimento"/>
+        android:text="Sugestao"/>
 
     <View style="@style/divider"/>
 
@@ -23,6 +32,13 @@
         tools:text="Etanol"
         android:textSize="48sp"
         android:gravity="center" android:id="@+id/tvSuggestion"/>
+
+    <TextView
+        android:id="@+id/tvFuelRatio"
+        style="@style/header_subtitle"
+        android:text="@string/label_ratio_fuel"
+        android:textStyle="normal"
+        android:gravity="center"/>
 
 
     <View style="@style/divider"/>
@@ -40,9 +56,12 @@
             style="@style/value_spent_footer"
             tools:text="0.30" android:id="@+id/tvGasAverageResult"/>
 
+
+
         <TextView
             style="@style/value_spent_footer"
             tools:text="0.30" android:id="@+id/tvEthanolAverageResult"/>
+
     </LinearLayout>
 
     <LinearLayout style="@style/container_row">
@@ -58,3 +77,4 @@
     </LinearLayout>
 
 </LinearLayout>
+</ScrollView>
